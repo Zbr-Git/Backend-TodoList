@@ -20,8 +20,9 @@ const TodoItem = ({ task, deleteTask, toggleCompleted }) => {
           />
         </div>
         <div
+       
           className={
-            task.completed ? "text-slate-500 line-through" : "text-slate-500"
+            task.isCompleted ? "text-slate-500 line-through" : "text-slate-500"
           }
         >
           {task.text}
